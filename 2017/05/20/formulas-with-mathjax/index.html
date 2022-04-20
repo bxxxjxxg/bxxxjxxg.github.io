@@ -393,13 +393,12 @@
 (function() {
     
     
-    
-    
+    if (window.location.hostname == "localhost")
+       return;
 
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
     var disqus_shortname = 'bxxxjxxg-github-io';
     dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
-    alert(dsq.src);
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();
 </script>
